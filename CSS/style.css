@@ -552,20 +552,15 @@ main {
     padding: 0;
     margin: 0;
     max-width: 1000px;
-    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
     max-height: 500px;
-    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
     width: 1000px;
-    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
     height: 500px;
-    /* Yüksekliği otomatik yaparak orantılı olarak küçülmesini sağlıyoruz */
 }
 
 .carousel-item .d-flex {
     justify-content: center;
     text-align: center;
     margin: 0;
-    /* Carousel öğeleri için iç boşlukları kaldır */
     padding: 0;
     max-width: 1000px;
     /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
@@ -574,7 +569,6 @@ main {
     width: 100%;
     /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
     height: 100%;
-    /* Yüksekliği otomatik yaparak orantılı olarak küçülmesini sağlıyoruz */
 }
 
 #kampanyalarCarousel #reklamlarCarousel #oneCikanlarCarousel {
@@ -712,7 +706,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
     max-width: 100%;
-    /* Geniş ekranlarda kart genişliğini sınırlandır */
     width: 90%;
     /* Kartın genişliği ekranın %90'ı olacak */
 }
@@ -761,7 +754,7 @@ h2 {
 }
 
 
-/* Sigorta şirketleri */
+/* Sigorta şirketleri alanı*/
 .insurance-companies {
     background-color: #F5F7F9;
     margin: auto;
@@ -906,7 +899,7 @@ h3 {
 .faq-item.open .faq-answer {
     display: block;
     max-height: 500px;
-    /* Cevabın tahmini maksimum yüksekliği */
+    /* Cevap alanının tahmini maksimum yüksekliği */
     opacity: 1;
 }
 
@@ -940,7 +933,7 @@ h3 {
     grid-template-columns: repeat(6, 1fr);
     /* 6 sütunlu grid yapısı */
     gap: 4px;
-    /* Kartlar arasındaki boşluk (daha küçük) */
+    /* Kartlar arasındaki boşluk */
     justify-items: center;
     /* Kartları ortalar */
     margin: 50px;
