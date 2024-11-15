@@ -1,0 +1,1104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #F5F7F9;
+    color: rgb(29, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Üst Menü */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 100%;
+    max-width: 95%;
+}
+
+.logo {
+    margin: 0;
+    padding: 10px;
+    position: sticky;
+    margin-top: 1%;
+    top: 0;
+
+}
+
+.navbar {
+    position: fixed;
+    margin: 0 30px;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    color: #515353;
+    position: relative;
+    transition: 0.2s;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.menu-item {
+    position: relative;
+    margin-left: 15px;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: #0089EC;
+}
+
+.menu-item:hover::after,
+.menu-item:focus::after {
+    background-color: #0089EC;
+    width: 100%;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #515353;
+    cursor: pointer;
+}
+
+/* Dropdown İçeriği */
+.dropdown {
+    position: absolute;
+    background-color: #F5F7F9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    display: none;
+    /* Varsayılan olarak gizli */
+    flex-direction: row;
+    gap: 50px;
+}
+
+.dropdown-section {
+    color: #515353;
+    border: 100px #666262;
+    padding: 30px;
+    margin: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: grid;
+    justify-content: space-around;
+}
+
+.dropdown-section a {
+    text-decoration: none;
+    color: #515353;
+    border: 100px #666262;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.menu-item.active .dropdown {
+    color: #515353;
+    display: flex;
+    /* Menü aktif olduğunda aç */
+}
+
+.menu-item .arrow {
+    margin-left: 0;
+    transition: transform 0.3s;
+}
+
+.menu-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.contact .btn-login {
+    background-color: #0089EC;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* Sağ Bildirim */
+.notification {
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    background-color: #FFFFFF;
+    color: #1F2020;
+    margin-top: 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: small;
+    padding: 3px 3px;
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 50px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.title .subtitle {
+    font-size: large;
+    color: #515353;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Ana İçerik */
+main {
+    text-align: center;
+    padding: 1px 2px;
+}
+
+.cards {
+    background-color: #F5F7F9;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.info .discount-label {
+    margin: 55px;
+    background-color: #76cf8b;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+.info .discount-label:hover {
+    color: #fff;
+}
+
+.info {
+    border: 1px #ddd;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    min-width: 100px;
+    /* Konteynerlerin minimum genişliği */
+    max-width: 800px;
+    /* Konteynerlerin maksimum genişliği */
+    box-sizing: border-box;
+    flex: 1 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+.info:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 1s ease;
+}
+
+.info img {
+    width: 100px;
+    height: auto;
+}
+
+.info span {
+    font-weight: bolder;
+    font-size: 90%;
+    color: #333;
+}
+
+.info span:hover {
+    color: #007bff;
+}
+
+.cards .view-all {
+    text-decoration: none;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+.info-container .view-all {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #007bff;
+}
+
+/* 2. Section */
+
+.info-section {
+    background-color: #FFFFFF;
+    /* Arka plan rengini beyaz yap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 90px;
+}
+
+
+.info-cards {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.title-2 {
+    margin-bottom: 20px;
+}
+
+.title-2 h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 650;
+    font-family: "Inter", sans-serif;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    padding: 90px;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: none;
+    /* Kenarlıkları kaldır */
+}
+
+#card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 650;
+    font-family: "Inter", sans-serif;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 auto;
+}
+
+/* Kaydırma alanı */
+
+.phone-mockup {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.scroll-container {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ortalamak için */
+    gap: 30px;
+    /* İçerik ve mobil ekran arasında boşluk bırakır */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    /* İçerik genişliği */
+    padding: 20px;
+    /* İçeriğin daha ferah görünmesi için iç boşluk */
+}
+
+
+.content-section {
+    display: block;
+    padding: 150px;
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mobile-screen {
+    flex: 1;
+    /* Eşit genişlik için flex kullan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen-content img {
+    width: 50%;
+    /* Mobil ekranın maksimum genişliğini sınırlayın */
+    height: 200%;
+    border-radius: 20px;
+    box-shadow: none;
+    /* Hafif gölge efekti */
+}
+
+.screen-content {
+    position: absolute;
+}
+
+#screen-text {
+    font-size: small;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.screen-feature-1,
+.screen-feature-2 {
+    position: absolute;
+    top: 1%;
+    right: 30%;
+    transform: translateX(-80%) scale(1);
+    width: 30%;
+    height: 15%;
+    opacity: 0;
+    /* Başlangıçta görünmez */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.screen-feature-1.active {
+    opacity: 1;
+    /* Görünür yap */
+    transform: translateX(-50%) scale(5);
+    /* Büyüt */
+}
+
+.screen-feature-2.active {
+    opacity: 1;
+    /* Görünür yap */
+    transform: translateX(-50%) scale(5);
+    /* Büyüt */
+}
+
+/* Küçük ekranlar için 480px ve altı - iPhone XR gibi daha geniş telefon ekranları */
+@media (max-width: 480px) {
+    .scroll-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .mobile-screen {
+        width: 100%;
+        max-width: 350px;
+        /* Daha geniş ekranlar için */
+    }
+}
+
+/* Orta ekranlar için 768px ve altı - iPad ve diğer tabletler */
+@media (max-width: 768px) {
+    .scroll-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .mobile-screen {
+        width: 100%;
+        max-width: 500px;
+        /* iPad ve daha geniş ekranlar için */
+    }
+}
+
+/* Carousel alanı */
+
+#container-mt {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 100%;
+    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
+    max-height: 100%;
+    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
+    width: 100%;
+    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
+    height: 100%;
+}
+
+.carousel-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 80px;
+    padding: 20px 30px;
+}
+
+/* Sekmeleri ortalamak için */
+.nav-tabs {
+    justify-content: center;
+    border: 10px;
+    background-color: #F5F7F9;
+}
+
+.nav-item {
+    opacity: 1;
+    padding: 5px;
+}
+
+.nav-item a {
+    font-size: 15px;
+    color: #717171;
+}
+
+.nav-item .nav-link.active {
+    border-radius: 10px;
+    border-color: #0089EC;
+    background-color: #FAFAFA;
+    color: #0089EC;
+}
+
+/* Sekmeler ile carousel arasında boşluk bırakmak için */
+.tab-content {
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 100%;
+    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
+    max-height: 100%;
+    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
+    width: 100%;
+    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
+    height: auto;
+    background-color: #F5F7F9;
+}
+
+
+/* Metinleri tüm sekme alanına yay */
+.tab-pane {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Carousel öğelerinin yüksekliğini sabitle */
+.carousel-inner,
+.carousel-item {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    max-width: 1000px;
+    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
+    max-height: 500px;
+    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
+    width: 1000px;
+    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
+    height: 500px;
+    /* Yüksekliği otomatik yaparak orantılı olarak küçülmesini sağlıyoruz */
+}
+
+.carousel-item .d-flex {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    /* Carousel öğeleri için iç boşlukları kaldır */
+    padding: 0;
+    max-width: 1000px;
+    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
+    max-height: 500px;
+    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
+    width: 100%;
+    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
+    height: 100%;
+    /* Yüksekliği otomatik yaparak orantılı olarak küçülmesini sağlıyoruz */
+}
+
+#kampanyalarCarousel #reklamlarCarousel #oneCikanlarCarousel {
+    overflow: hidden;
+    max-width: 1000px;
+    /* Tüm carousel öğeleri için maksimum genişlik belirliyoruz */
+    max-height: 500px;
+    /* Tüm carousel öğeleri için maksimum yükseklik belirliyoruz */
+    width: 100%;
+    /* Genişliği %100 yaparak tam olarak sığmasını sağlıyoruz */
+    height: auto;
+    /* Yüksekliği otomatik yaparak orantılı olarak küçülmesini sağlıyoruz */
+}
+
+#oneCikanlarCarousel .carousel-item {
+    background-color: #FF7300;
+}
+
+/* Metin ve düğmelerin hizalanması */
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Ekran boyutlarına göre değişiklikler */
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 24px;
+        margin: 10px 40px;
+        padding: 10px 20px;
+    }
+
+    .carousel-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .carousel-text h2 {
+        font-size: 18px;
+    }
+
+    .carousel-text button {
+        font-size: 14px;
+    }
+
+    .carousel-item .d-flex {
+        flex-direction: column;
+    }
+
+    .carousel-item img,
+    .carousel-item iframe {
+        max-height: 300px;
+    }
+}
+
+/*Referans alanı*/
+.container-testimonials {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.comment-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    padding: 0 20px;
+    /* Kenarlardan biraz boşluk ekledik */
+}
+
+.cm-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 350px;
+    /* Minimum genişlik */
+    max-width: 500px;
+    /* Maksimum genişlik */
+}
+
+.cm-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.cm-card strong {
+    color: #000;
+}
+
+.author {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Ödül alanı */
+.award-section {
+    background-color: #f5f7fa;
+    /* Sayfanın arka plan rengi */
+    padding: 60px 0;
+    /* Sayfa içindeki bölüme üst-alt boşluk */
+    display: flex;
+    justify-content: center;
+    /* Kartı yatayda ortalamak için */
+    align-items: center;
+    width: 100%;
+    /* Bölümü tam ekran genişliğinde yap */
+}
+
+.card-award {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    /* Kartın arka plan rengi beyaz */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    max-width: 100%;
+    /* Geniş ekranlarda kart genişliğini sınırlandır */
+    width: 90%;
+    /* Kartın genişliği ekranın %90'ı olacak */
+}
+
+.award-content {
+    flex: 1 1 60%;
+    /* İçerik alanı resim alanına göre daha geniş olacak */
+    justify-content: space-between;
+    margin: 40px;
+    padding: 10px;
+}
+
+.award-content h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.award-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.award-button {
+    display: contents;
+    color: #0089EC;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.award-images {
+    display: flex;
+    gap: 15px;
+    flex: 0 1 40%;
+}
+
+.award-images img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    /* Resimlerin doğru orantıda görünmesini sağlar */
+}
+
+
+/* Sigorta şirketleri */
+.insurance-companies {
+    background-color: #F5F7F9;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.company {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.company img {
+    max-width: 100%;
+    height: auto;
+    /* Sigorta logoları başlangıçta siyah-beyaz olacak */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    /* Geçiş animasyonu */
+}
+
+/* Kartların üzerine gelindiğinde renkli hale gelecek */
+.company:hover img {
+    filter: grayscale(0%);
+}
+
+#show-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+#show-more:hover {
+    background-color: #0056b3;
+}
+
+#hide-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+/* FAQ Alanı */
+.faq-section {
+    background-color: #f5f7fa;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    /* İçerik taşmasını önlemek için */
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 25px;
+    font-size: 18px;
+    text-align: left;
+    color: #222323;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    outline: none;
+}
+
+.faq-question:after {
+     /* Artı ikonu */
+    content: "\002B";
+    font-size: 20px;
+    color: #007bff;
+}
+
+.faq-item.open .faq-question:after {
+    /* Eksi ikonu */
+    content: "\2212";
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #666;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    overflow: hidden;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    /* Geçiş süresini artırdık */
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+    max-height: 500px;
+    /* Cevabın tahmini maksimum yüksekliği */
+    opacity: 1;
+}
+
+/* Sigorta kategori kartları */
+.category-branch-section {
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f6f9;
+    /* Arka plan rengi */
+    padding: 100px 250px;
+    margin: 80px 90px;
+    gap: 20px;
+}
+
+.category-branch-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.category-branch-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 sütunlu grid yapısı */
+    gap: 4px;
+    /* Kartlar arasındaki boşluk (daha küçük) */
+    justify-items: center;
+    /* Kartları ortalar */
+    margin: 50px;
+}
+
+.insurance-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 150px;
+    /* Kart genişliği */
+    margin-bottom: 12px;
+}
+
+.insurance-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 1s ease;
+
+}
+
+.insurance-card img {
+    width: 100%;
+    /* İkon boyutu */
+    height: 84px;
+    margin-bottom: 12px;
+}
+
+.insurance-card span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-top: 8px;
+    /* Yazının ikonla olan mesafesini ayarladık */
+    line-height: 1.2;
+    /* Metin satır yüksekliğini ayarladık */
+}
+
+.insurance-card span:hover {
+    color: #318FCC;
+    transition: color ease;
+}
+
+/* Küçük ekranlar için responsive ayar */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        /* Küçük ekranlarda daha dar sütunlar */
+    }
+}
+
+/* Genel footer stili */
+.footer {
+    background-color: #FFFFFF;
+    color: #333;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-logo .footer-bottom {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-logo #logo-1 {
+    width: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-right: 40px;
+    text-align: left;
+}
+
+.footer-column {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Sağ taraftaki iletişim, sosyal medya ve ödül kısmı */
+.footer-contact {
+    text-align: left;
+    width: 20%;
+}
+
+.footer-contact .footer-award img {
+    width: 25%;
+    height: 25%;
+}
+
+.footer-contact a img {
+    width: 25%;
+    height: 20%;
+}
+
+.footer-contact h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+}

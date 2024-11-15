@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigortam.net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Üst Menü ve Logo -->
+    <header>
+        <div class="logo">
+            <a href="../HTML/sigortam-net.html">
+                <img src="../Image/app-logo-goat.svg">
+                <img src="../Image/app-logo-title.svg">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link" id="productsMenu">Ürünlerimiz <span class="arrow">&#9660;</span></a>
+                    <div class="dropdown">
+                        <div class="dropdown-section">
+                            <h5>Aracım</h5>
+                            <a href="#">Kasko</a>
+                            <a href="#">Trafik Sigortası</a>
+                            <a href="#">İMM</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h5>Sağlığım</h5>
+                            <a href="#">Tamamlayıcı Sağlık Sigortası</a>
+                            <a href="#">Özel Sağlık Sigortası</a>
+                            <a href="#">Seyahat Sağlık</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h5>Evim</h5>
+                            <a href="#">DASK</a>
+                            <a href="#">Konut Sigortası</a>
+                            <a href="#">Evim Güvende</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h5>Diğer</h5>
+                            <a href="#">Cep Telefonu</a>
+                            <a href="#">Evcil Hayvan</a>
+                            <a href="#">Ferdi Kaza</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" id="campaignMenu">Kampanyalar</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" id="policeMenu">Poliçe İşlemleri <span
+                            class="arrow">&#9660;</span></a>
+                    <div class="dropdown">
+                        <div class="dropdown-section">
+                            <a href="#">Poliçe İptal Başvuru</a>
+                            <a href="../HTML/police-iptal-takip.html">Poliçe İptal Takip</a>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link" id="infoMenu">Bilgi Merkezi <span 
+                            class="arrow">&#9660;</span></a>
+                        <div class="dropdown">
+                            <div class="dropdown-section">
+                                <a href="#">Sigorta Blog</a>
+                                <a href="#">Hakkımızda</a>
+                            </div>
+                        </div>
+                    </li>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="contact">
+            <h6>Yardımcı olmaya hazırız</h6>
+            <p><i class="fa-solid fa-phone"></i> 444 23 00</p>
+            <button class="btn-login">Giriş Yap / Üye Ol</button>
+        </div>
+    </header>
+
+    <!-- Sağ Bildirim -->
+    <aside class="notification">
+        <img src="../Image/gift.svg">
+        <a>Arkadaşlarını Davet Et, 20.000 TL'ye varan hediye çeki kazan!</a>
+    </aside>
+
+    <div class="title">
+        <h1>Sigortada Güvenin Adresi</h1>
+        <p class="subtitle">Doğru Ürün. İyi Fiyat. 7/24 Hizmet.</p>
+    </div>
+
+    <!-- Ana İçerik -->
+    <main>
+        <!-- Sigorta Kartları -->
+        <section class="cards">
+            <div class="info-container">
+                <div class="row">
+                    <div class="info">
+                        <img src="/Image/auto-v2.svg">
+                        <br>
+                        <span>Kasko</span>
+                    </div>
+                    <div class="info">
+                        <span class="discount-label">%10 İndirim</span>
+                        <img src="/Image/electric-vehicle-orange.svg">
+                        <br>
+                        <span>Elektrikli Araç Kaskosu</span>
+                    </div>
+                    <div class="info">
+                        <img src="/Image/complementhealth-v2.svg">
+                        <br>
+                        <span>Tamamlayıcı Sağlık</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <img src="/Image/traffic-orange.svg">
+                        <br>
+                        <span>Trafik Sigortası</span>
+                    </div>
+                    <div class="info">
+                        <img src="/Image/imm.svg">
+                        <br>
+                        <span>İMM</span>
+                    </div>
+                    <div class="info">
+                        <img src="/Image/healthOrange.svg">
+                        <br>
+                        <span>Özel Sağlık</span>
+                    </div>
+                    <div class="info">
+                        <img src="/Image/travel.svg">
+                        <br>
+                        <span>Seyahat Sağlık</span>
+                    </div>
+                    <div class="info">
+                        <img src="/Image/dask-v2.svg" alt="">
+                        <br>
+                        <span>DASK</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="view-all">
+                Tüm Ürünleri Gör</a>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="info-section">
+            <div class="info-cards">
+                <div class="title-2">
+                    <h1>Poliçemi neden Sigortam.net’ten almalıyım?</h1>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <img src="../Image/policy-trustworthy.svg" alt="Doğru Ürün">
+                        <h3 id="card-title">Doğru Ürün</h3>
+                        <p>Yenilenen yapay zekâmızla, onlarca sigorta teklifi arasından ucuzunu, sana uygununu ve
+                            kapsamlısını buluyoruz. Net teminatlar ve net fiyatlarla kararın hep net olsun.</p>
+                    </div>
+                    <div class="card">
+                        <img src="../Image/policy-price.svg" alt="İyi Fiyat">
+                        <h3 id="card-title">İyi Fiyat</h3>
+                        <p>Önceliğimiz her zaman sensin. Çalıştığımız tüm şirketlerde bütçeni düşünerek “en iyi fiyat
+                            garantisi” sunuyoruz.</p>
+                    </div>
+                    <div class="card">
+                        <img src="../Image/policy-with-you.svg" alt="7/24 Hizmet">
+                        <h3 id="card-title">7/24 Hizmet</h3>
+                        <p>24 yıllık tecrübemiz ve uzman sigorta danışmanlarımızla 7/24 her ihtiyacında yanındayız.
+                            Üstelik hasar anında saniyeler içinde bize ulaşabilirsin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sayfa kaydırma alanı -->
+        <section class="phone-mockup">
+            <div class="scroll-container">
+                <!-- İçerik Bölümü -->
+                <div class="content">
+                    <section class="content-section" id="section1">
+                        <h2>Hangi ürün bana en uygun diye düşünme, biz senin için en net teklifleri sıraladık bile!</h2>
+                        <p>Tüm teminatları tek tek inceledik, ihtiyaçlarına en uygun olan teminatları belirledik. Sana
+                            özel kapsamlı ve fiyatı uygun ürün önerileri hazırladık.</p>
+                        <button class="btn">Hemen Teklif Al -></button>
+                    </section>
+                    <section class="content-section" id="section2">
+                        <h2>Sadece 2 dakikada tüm teklifleri kolayca karşılaştır.</h2>
+                        <p>20+ sigorta şirketinden teklifleri tek platformda karşılaştır, internete özel indirimlerle
+                            uygun fiyata sigortan anında başlasın.</p>
+                        <button class="btn">Hemen Teklif Al -></button>
+                    </section>
+                </div>
+
+                <!-- Mobil ekran alanı -->
+                <div class="mobile-screen">
+                    <div class="screen-content">
+                        <img src="../Image/phone-mockup.jpg" alt="Phone Mockup" class="phone-img">
+                        <p id="screen-text">Görseldeki fiyatlar temsilidir. Aracına özel fiyatları tekliflerde
+                            görebilirsin.</p>
+                        <div class="screen-feature-1">
+                            <img src="../Image/feature1.svg" alt="Feature 1">
+                        </div>
+                        <div class="screen-feature-2">
+                            <img src="../Image/feature2.svg" alt="Feature 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Alanı -->
+        <section class="container mt-5" id="container-mt">
+            <h1 class="carousel-title">Sigortam.net'te sana özel neler var?</h1>
+            <!-- Sekmeler -->
+            <ul class="nav nav-tabs bg-white" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="kampanyalar-tab" data-bs-toggle="tab" href="#kampanyalar" role="tab"
+                        aria-controls="kampanyalar" aria-selected="false">İndirimler & Kampanyalar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="reklamlar-tab" data-bs-toggle="tab" href="#reklamlar" role="tab"
+                        aria-controls="reklamlar" aria-selected="true">Reklam Filmleri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="oneCikanlar-tab" data-bs-toggle="tab" href="#oneCikanlar" role="tab"
+                        aria-controls="oneCikanlar" aria-selected="false">Öne Çıkanlar</a>
+                </li>
+            </ul>
+
+            <!-- Tab İçerikleri -->
+            <div class="tab-content" id="myTabContent">
+                <!-- Kampanyalar Carousel -->
+                <div class="tab-pane fade" id="kampanyalar" role="tabpanel" aria-labelledby="kampanyalar-tab">
+                    <div id="kampanyalarCarousel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#kampanyalarCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-4 bg-primary text-white w-50">
+                                        <h2>Arkadaşlarını davet et, 20.000 TL' ye varan hediye çeki kazan!</h2>
+                                        <button class="btn btn-primary text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/paylas-kazan-kampanya.jpg" class="w-50" alt="Kampanya 1">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-4 bg-primary text-white w-50">
+                                        <h2>Kaskoda %65’e varan hasarsızlık indirimi!</h2>
+                                        <button class="btn btn-primary text-white  mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/kasko-hasarsizlik.jpg" class="w-50" alt="Kampanya 2">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-4 bg-primary text-white w-50">
+                                        <h2>%25'e varan meslek indirimleriyle kaskon Sigortam.net'te!</h2>
+                                        <button class="btn btn-primary text-white  mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/meslek-indirimi.jpg" class="w-50" alt="Kampanya 3">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-4 bg-primary text-white w-50">
+                                        <h2>Sigortam.net'ten Türk Telekom müşterilerine özel indirimler!</h2>
+                                        <button class="btn btn-primary text-white  mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/turk-telekom.jpg" class="w-50" alt="Kampanya 4">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#kampanyalarCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#kampanyalarCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Reklamlar Carousel -->
+                <div class="tab-pane fade show active" id="reklamlar" role="tabpanel" aria-labelledby="reklamlar-tab">
+                    <div id="reklamlarCarousel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#reklamlarCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#reklamlarCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#reklamlarCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#reklamlarCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#reklamlarCarousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <iframe width="1080" height="520" src="https://www.youtube.com/embed/OMyxYmyyJRg"
+                                    title="Sigortam.net Paylaş Kazan ile Kazancın Net!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="1080" height="520" src="https://www.youtube.com/embed/fkTBn_w8Jzw"
+                                    title="Sigortam.net’e Gelin Benzer Kaskoya Çoook Fazla Ödemeyin!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="1080" height="520" src="https://www.youtube.com/embed/-ZpvfneEadA"
+                                    title="10 Milyon Mutlu Müşteri Sigortam.net&#39;i Seçti! ​" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="1080" height="520" src="https://www.youtube.com/embed/UQ-3UkXC09E"
+                                    title="20&#39;den Fazla Sigorta Şirketi Sigortam.net&#39;te!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="carousel-item">
+                                <iframe width="1080" height="520" src="https://www.youtube.com/embed/AAIrFOA-NbQ"
+                                    title="Sigortam.net&#39;ten Kasko Yaptırmalı!" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reklamlarCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reklamlarCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Öne Çıkanlar Carousel -->
+                <div class="tab-pane fade" id="oneCikanlar" role="tabpanel" aria-labelledby="oneCikanlar-tab">
+                    <div id="oneCikanlarCarousel" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#oneCikanlarCarousel" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">Paylaş Kazan Sigortam.net'te!</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/paylas-kazan-one-cikanlar.jpg" class="w-50" alt="Öne Çıkan 1">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">İyi sürücü kaskoya az öder!</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/iyi-sürücü.jpg" class="w-50" alt="Öne Çıkan 2">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">İhtiyacına uygun Sağlık Sigortası Sigortam.net'te!</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/saglik-sigortasi.jpg" class="w-50" alt="Öne Çıkan 3">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">İMM Sigortası Sigortam.net'te!</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/imm-sigorta.jpg" class="w-50" alt="Öne Çıkan 4">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">Seyahat Sağlık Sigortası Sigortam.net'te!</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/seyahat-saglik.jpg" class="w-50" alt="Öne Çıkan 5">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">3 saniyede hasar destek hattı ile kafan hep net.</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/hasar-destek-hatti.jpg" class="w-50" alt="Öne Çıkan 6">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">Sana özel sağlık danışmanı ile kafan hep net.</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/sana-ozel-saglik-danismani.jpg" class="w-50" alt="Öne Çıkan 7">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">İMM Nedir?</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/imm-nedir.jpg" class="w-50" alt="Öne Çıkan 8">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex">
+                                    <div class="carousel-text p-9 w-50">
+                                        <h2 class="text-white">Türkiye'nin en çok ziyaret edilen sigorta platformu</h2>
+                                        <button class="btn text-white mt-3">Hemen Keşfet →</button>
+                                    </div>
+                                    <img src="../Image/en-cok-ziyaret-edilen-platform.jpg" class="w-50"
+                                        alt="Öne Çıkan 9">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Carousel butonları-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#oneCikanlarCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#oneCikanlarCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Referans alanı-->
+        <section>
+            <div class="container-testimonials">
+                <h2>10 Milyon Mutlu Müşteri, 50+ Milyon Poliçe Teklifi</h2>
+                <div class="comment-cards">
+                    <div class="cm-card">
+                        <p>İnternetten alınan bir poliçeden <strong>çok daha fazlası</strong>. Kaza anında çekicinin
+                            gelmesinden tutun sağlık durumunuza kadar <strong>her şeyle ilgileniyorlar</strong>.</p>
+                        <span class="author">Kasım Ş.</span>
+                    </div>
+                    <div class="cm-card">
+                        <p>Sigortam.net sayesinde evden çıkmadan <strong>tek bir telefonla</strong> trafik sigortası ve
+                            kaskoyu yaptırdım. <strong>Hızlı, sorunsuz ve güvenilir</strong>.</p>
+                        <span class="author">Murat İ.</span>
+                    </div>
+                    <div class="cm-card">
+                        <p>Piyasadan alabileceğim kasko poliçesini aynı kapsamda <strong>taksitle, daha ucuza ve
+                                profesyonel hizmetle</strong> Sigortam.net üzerinden satın aldım.</p>
+                        <span class="author">Şaban K.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Award alanı-->
+        <section class="award-section">
+            <div class="card-award">
+                <div class="award-content">
+                    <h4>Ödüllerimizden bahsetmiş miydik?</h4>
+                    <p>Dünyanın en prestijli ödüllerinden biri olan Stevie Awards'ta
+                        <br>Sigorta Sektörünün En İyi Websitesi
+                        Ödülü'nü kazandık.<br>
+                        Sizinle yürüdüğümüz bu yolda nice ödülleri kucaklamak dileğiyle...
+                    </p>
+                    <a href="#" class="award-button">Detaylı Bilgi →</a>
+                </div>
+                <div class="award-images">
+                    <img src="../Image/snet-gold-winner-badge.png" alt="Gold Award">
+                    <img src="../Image/if-design-award-2024-vertical.png" alt="IF Design Award">
+                </div>
+            </div>
+        </section>
+
+        <!--Sigorta şirketleri alanı-->
+        <section class="insurance-companies">
+            <h3>20’den fazla sigorta şirketinden teklif al</h3>
+            <!--Default gözüken 2 row -->
+            <div class="row" id="row-companies">
+                <div class="company"><img src="../Image/acibadem-sigorta.png" alt="Acıbadem Sigorta"></div>
+                <div class="company"><img src="../Image/ak-sigorta.png" alt="Ak Sigorta"></div>
+                <div class="company"><img src="../Image/allianz.png" alt="Allianz"></div>
+                <div class="company"><img src="../Image/anadolu-sigorta.png" alt="Anadolu Sigorta"></div>
+                <div class="company"><img src="../Image/anadolu-hayat-emeklilik.png" alt="Anadolu Hayat Emeklilik">
+                </div>
+            </div>
+            <div class="row" id="row-companies">
+                <div class="company"><img src="../Image/aveon-global-sigorta.png" alt="Aveon Global Sigorta"></div>
+                <div class="company"><img src="../Image/axa-sigorta.png" alt="AXA Sigorta"></div>
+                <div class="company"><img src="../Image/axa-hayat-emeklilik.png" alt="AXA Hayat Emeklilik"></div>
+                <div class="company"><img src="../Image/demir-saglik.png" alt="Demir"></div>
+                <div class="company"><img src="../Image/doga-sigorta.png" alt="Doğa Sigorta"></div>
+            </div>
+
+            <button id="show-more">+15 Sigorta Şirketini Gör</button>
+
+            <!-- Açılacak olan 3 row -->
+            <div class="row row-companies-2" style="display: none;">
+                <div class="company"><img src="../Image/eureko.png" alt="Eureko Sigorta"></div>
+                <div class="company"><img src="../Image/fiba-sigorta.png" alt="Fiba Sigorta"></div>
+                <div class="company"><img src="../Image/gig-sigorta.png" alt="GIG Sigorta"></div>
+                <div class="company"><img src="../Image/hdi-sigorta.png" alt="HDI Sigorta"></div>
+                <div class="company"><img src="../Image/magdeburger-sigorta.png" alt="Madgeburger Sigorta"></div>
+            </div>
+            <div class="row row-companies-2" style="display: none;">
+                <div class="company"><img src="../Image/mapfre-sigorta.png" alt="Mapfre Sigorta"></div>
+                <div class="company"><img src="../Image/neova-sigorta.png" alt="Neova Sigorta"></div>
+                <div class="company"><img src="../Image/orient-sigorta.png" alt="Orient Sigorta"></div>
+                <div class="company"><img src="../Image/quick-sigorta.png" alt="Quick Sigorta"></div>
+                <div class="company"><img src="../Image/ray-sigorta.png" alt="Ray Sigorta"></div>
+            </div>
+            <div class="row row-companies-2" style="display: none;">
+                <div class="company"><img src="../Image/sompo-sigorta.png" alt="Sombo Sigorta"></div>
+                <div class="company"><img src="../Image/turkiye-sigorta.png" alt="Türkiye Sigorta"></div>
+                <div class="company"><img src="../Image/turk-nippon-sigorta.png" alt="Türk Nippon Sigorta"></div>
+                <div class="company"><img src="../Image/unico.png" alt="Unico Sigorta"></div>
+                <div class="company"><img src="../Image/zurich-sigorta.png" alt="Zurich Sigorta"></div>
+            </div>
+
+            <button id="hide-more" style="display: none;">Daha Az Sigorta Şirketini Gör</button>
+        </section>
+
+        <!--FAQ alanı-->
+        <section class="faq-section">
+            <h2>Sigortam.net Hakkında En Merak Edilen 5 Soru</h2>
+            <div class="faq-item">
+                <button class="faq-question">Neden Sigortam.net’i tercih etmeliyim, farkınız nedir?</button>
+                <div class="faq-answer">
+                    <p>Sigortam.net Türkiye'nin ilk ve lider online sigorta brokeridir. Broker olarak farkımız,
+                        öncelikli olarak müşterilerimizi temsil etmemiz ve onların menfaatleri doğrultusunda hareket
+                        etmemizdir. Bu misyonla her zaman müşterilerimizin tarafındayız ve 20+ sigorta şirketi teklifini
+                        tek bir sayfada görmelerini, hem teminatları hem de fiyatları objektif olarak
+                        karşılaştırmalarını sağlıyoruz. Böylece müşterilerimiz ihtiyaçlarına en uygun sigortayı kolayca
+                        belirliyor ve online olarak satın alabiliyor. Ayrıca satış sonrası herhangi bir ihtiyacınızda 24
+                        yıllık tecrübeli ekibimiz 7/24 desteğe hazır.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Poliçe satışında müşterilerden ek ücret alıyor musunuz?</button>
+                <div class="faq-answer">
+                    <p>Hayır, hiçbir ek ücret almıyoruz. Müşterilerimizden yalnızca sigorta şirketinin belirlediği
+                        poliçe fiyatını tahsil ediyoruz. Bu fiyat üzerinden Sigortam.net indirimleri veya iş birliği
+                        kampanyalarımız ile müşterilerimize en iyi fırsatları sunuyoruz.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Poliçe fiyatlarında indirim yapıyor musunuz?</button>
+                <div class="faq-answer">
+                    <p>Evet, sigorta şirketinin belirlediği poliçe fiyatı üzerinden, müşteriye özel Sigortam.net
+                        indirimleri uygulanabilir. Satın alma aşamasında kartınızdan sigorta şirketinin belirlediği
+                        tutar tahsil edilir, indirim tutarı Sigortam.net tarafından ödeme yapılan kredi kartına 1 hafta
+                        içerisinde iade edilir.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">En iyi sigorta teklifini nasıl seçeceğim?</button>
+                <div class="faq-answer">
+                    <p>Anlaşmalı olduğumuz 20+ sigorta şirketinin müşterilerimize özel hazırladığı teklifleri fiyat ve
+                        teminatlar açısından puanlayıp öneriler hazırlıyoruz. Bu sayede müşterilerimiz teklifler
+                        arasından; en ucuz fiyata sahip ürün, fiyat/performans skoru en iyi olan ürün ve en kapsamlı
+                        teminat içeriğine sahip ürünü kolayca görebilir. Uzun süren incelemelere gerek kalmadan
+                        ihtiyacına en uygun poliçeyi hızlıca bulur ve güvencesini başlatır.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Sigortam.net’te kişisel bilgilerim güvende mi?</button>
+                <div class="faq-answer">
+                    <p>Evet, müşterilerimize özel sigorta teklifi için paylaşılan kişisel bilgiler ve ödeme bilgileri,
+                        tüm dünyada kabul edilip kullanılan SSL protokolümüz ile korunur. Sigortam.net TOBB tarafından
+                        verilen Güven Damgası’na sahip sigorta sektöründeki ilk şirkettir. Ödeme bilgileri sadece ödeme
+                        gerçekleştirilirken kullanılıp işlem sonrası kesinlikle kayıtlı tutulmaz. Bu güvenlik
+                        protokolleri sayesinde müşterilerimizin bilgileri Sigortam.net’e geldiği andan ödemenin
+                        tamamlanmasına kadar güvendedir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sigorta kategori kartları-->
+        <section class="category-branch-section">
+            <h2>Sigortada Güvenin Adresi</h2>
+            <p>Doğru Ürün. İyi Fiyat. 7/24 Hizmet.</p>
+            <div class="category-grid">
+                <div class="insurance-card">
+                    <img src="../Image/traffic.svg" alt="Trafik Sigortası">
+                    <span>Trafik Sigortası</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/auto-v2.svg" alt="Kasko">
+                    <span>Kasko</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/imm (1).svg" alt="İMM">
+                    <span>İMM</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/complementhealth-v2.svg" alt="Tamamlayıcı Sağlık">
+                    <span>Tamamlayıcı Sağlık</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/health-v2.svg" alt="Özel Sağlık">
+                    <span>Özel Sağlık</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/travel.svg" alt="Seyahat Sağlık">
+                    <span>Seyahat Sağlık</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/dask.svg" alt="DASK">
+                    <span>DASK</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/home.svg" alt="Evim Güvende">
+                    <span>Evim Güvende</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/housing.svg" alt="Konut Sigortası">
+                    <span>Konut Sigortası</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/personal-accident-blue.svg" alt="Ferdi Kaza">
+                    <span>Ferdi Kaza</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/pet-v2.svg" alt="Evcil Hayvan">
+                    <span>Evcil Hayvan</span>
+                </div>
+                <div class="insurance-card">
+                    <img src="../Image/phone.svg" alt="Cep Telefonu">
+                    <span>Cep Telefonu</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer alanı -->
+        <footer class="footer">
+            <div class="container">
+                <!-- Sol Üst Köşe Logo -->
+                <div class="footer-logo">
+                    <img src="../Image/app-logo-goat.svg" id="logo-1">
+                    <img src="../Image/app-logo-title.svg" id="logo-2">
+                    <div class="footer-bottom">
+                        <p>&copy; 2000-2024 Sigortam.net</p>
+                    </div>
+                </div>
+
+                <!-- 4 Sütunluk Linkler -->
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Ürünlerimiz</h4>
+                        <ul>
+                            <li><a href="#">Kasko Sigortası</a></li>
+                            <li><a href="#">Trafik Sigortası</a></li>
+                            <li><a href="#">İMM Sigortası</a></li>
+                            <li><a href="#">Tamamlayıcı Sağlık Sigortası</a></li>
+                            <li><a href="#">Özel Sağlık Sigortası</a></li>
+                            <li><a href="#">Konut Sigortası</a></li>
+                            <li><a href="#">DASK</a></li>
+                            <li><a href="#">Evim Güvende Sigortası</a></li>
+                            <li><a href="#">Ferdi Kaza Sigortası</a></li>
+                            <li><a href="#">Telefon Sigortası</a></li>
+                            <li><a href="#">Evcil Hayvan Sigortası</a></li>
+                            <li><a href="#">Seyahat Sağlık Sigortası</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Merak Edilenler</h4>
+                        <ul>
+                            <li><a href="#">Günlük, Haftalık ve Aylık Kasko</a></li>
+                            <li><a href="#">Doğum Sigortası Fiyatları</a></li>
+                            <li><a href="#">Hamileyken Doğum Sigortası</a></li>
+                            <li><a href="#">IMM Sigortası Nedir</a></li>
+                            <li><a href="#">Internetten Trafik Sigortası Yaptırmak</a></li>
+                            <li><a href="#">Sağlık Sigortası Karşılaştırma</a></li>
+                            <li><a href="#">SBM Teklif Al</a></li>
+                            <li><a href="#">Trafik Sigortası Şirketleri</a></li>
+                            <li><a href="#">TSS Doğum Paketi</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hızlı Erişim</h4>
+                        <ul>
+                            <li><a href="#">Araç Yakıt Hesaplama</a></li>
+                            <li><a href="#">Kasko Değer Listesi</a></li>
+                            <li><a href="#">MTV Hesaplama</a></li>
+                            <li><a href="#">ÖTV Hesaplama</a></li>
+                            <li><a href="#">Trafik Sigortası Basamakları Hesaplama</a></li>
+                            <li><a href="#">Tramer Kaydı Sordulama</a></li>
+                            <li><a href="#">Zorunlu Trafik Sigortası Fiyatları</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Hakkımızda</h4>
+                        <ul>
+                            <li><a href="#">Biz Kimiz?</a></li>
+                            <li><a href="#">İletişim</a></li>
+                            <li><a href="#">Ödüllerimiz</a></li>
+                            <li><a href="#">İletişim Rehberi</a></li>
+                            <li><a href="#">Kariyer</a></li>
+                            <li><a href="#">Kullanıcı Sözleşmesi</a></li>
+                            <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                            <li><a href="#">Gizlilik ve Çerez Politikası</a></li>
+                            <li><a href="#">Çerez Tercihleri</a></li>
+                            <li><a href="#">Sigortam.net Basketbol Takımı</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sağ Tarafta Sosyal Medya ve İletişim -->
+                <div class="footer-contact">
+                    <div class="footer-award">
+                        <img src="../Image/snet-gold-winner-badge.png" alt="Gold Winner Badge">
+                        <img src="../Image/horizontal-if-design-award-2024.png" alt="If Design Award">
+                    </div>
+                    <br>
+
+                    <h4>Yardımcı olmaya hazırız</h4>
+                    <p><i class="fa-solid fa-phone"></i> 444 23 00</p>
+                    <br>
+
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/sigortamnet"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/sigortamnet"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://instagram.com/sigortamnet"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.linkedin.com/company/sigortam-net"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/c/sigortamnet"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <br>
+                    <a href="https://www.guvendamgasi.org.tr/firmadetay.php?Guid=99a596af-0146-11ea-b063-48df373f4850">
+                        <img src="../Image/guven-damgasi.svg" alt="Güven damgası">
+                    </a>
+                    <a href="https://www.eticaret.gov.tr/siteprofil/9A3EA448D1B84D2BA4A873990B83B894/wwwsigortamnet">
+                        <img src="../Image/etbis.jfif" alt="Etbis Karekod">
+                    </a>
+                    <img src="../Image/ssl.svg" alt="SSL">
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- Bootstrap JavaScript dosyası -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript dosyamız -->
+    <script src="../JavaScript/script.js"></script>
+
+</body>
+
+</html>

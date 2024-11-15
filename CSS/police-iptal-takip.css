@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #F5F7F9;
+    color: rgb(29, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Üst Menü */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 100%;
+    max-width: 95%;
+}
+
+.logo {
+    margin: 0;
+    padding: 10px;
+    position: sticky;
+    margin-top: 1%;
+    top: 0;
+
+}
+
+.navbar {
+    /* Additional styling */
+    position: fixed;
+    margin: 0 30px;
+    text-decoration: none;
+    background-color: #f8f8f8;
+    padding: 10px;
+    color: #515353;
+    position: relative;
+    transition: 0.2s;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+
+.menu-item {
+    position: relative;
+    margin-left: 15px;
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: 0.2s;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color: #0089EC;
+}
+
+.menu-item:hover::after,
+.menu-item:focus::after {
+    background-color: #0089EC;
+    width: 100%;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #515353;
+    cursor: pointer;
+}
+
+/* Dropdown İçeriği */
+.dropdown {
+    position: absolute;
+    background-color: #F5F7F9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 900px;
+    display: none;
+    /* Varsayılan olarak gizli */
+    flex-direction: row;
+    gap: 50px;
+}
+
+.dropdown-section {
+    color: #515353;
+    border: 100px #666262;
+    padding: 30px;
+    margin: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: grid;
+    justify-content: space-around;
+}
+
+.dropdown-section a {
+    text-decoration: none;
+    color: #515353;
+    border: 100px #666262;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.menu-item.active .dropdown {
+    color: #515353;
+    display: flex;
+    /* Menü aktif olduğunda aç */
+}
+
+.menu-item .arrow {
+    margin-left: 0;
+    transition: transform 0.3s;
+}
+
+.menu-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+.contact .btn-login {
+    background-color: #0089EC;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+}
+
+.policy-cancellation {
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.policy-cancellation h1 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    /* Center align header */
+}
+
+.policy-cancellation p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left;
+    /* Center align description */
+}
+
+.policy-cancellation form {
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-type {
+    display: flex;
+    justify-content: left;
+    /* Center align radio buttons */
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.policy-type label {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    /* Boyutlandırma faktörü (ör. 1.5 = %150 büyütme) */
+}
+
+/* Container için stil */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input alanı */
+.input-container  input[type="text"]{
+    width: 100%;
+    padding: 12px 10px 12px 10px; /* Üst ve alt padding aynı, sağ ve sol daha geniş */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input odaklandığında kenar rengini mavi yap */
+.input-container input:focus {
+    border-color: #0089EC;
+}
+
+/* Label'in konumunu ve stilini belirliyoruz */
+.input-container label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Placeholder için stil */
+.input-container input::placeholder {
+    color: #aaa; /* Placeholder rengini açık gri yapıyoruz */
+}
+
+.captcha {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.captcha label {
+    font-size: 14px;
+    color: #666;
+}
+
+.policy-cancellation button {
+    padding: 15px;
+    margin-bottom: 95px;
+    font-size: 17px;
+    background-color: #0089EC;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.policy-cancellation button:hover {
+    background-color: #0056b3;
+}
+
+/* Genel footer stili */
+.footer {
+    background-color: #FFFFFF;
+    color: #333;
+    padding: 40px 40px;
+    font-size: 14px;
+    width: 100%; /* Tüm ekran genişliğini kaplar */
+    margin-left: calc(50% - 50vw); /* Sayfanın ortasına hizalar */
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-logo .footer-bottom {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.footer-logo img {
+    width: 200px;
+}
+
+.footer-logo #logo-1 {
+    width: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-right: 40px;
+    text-align: left;
+}
+
+.footer-column {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Sağ taraftaki iletişim, sosyal medya ve ödül kısmı */
+.footer-contact {
+    text-align: left;
+    width: 20%;
+}
+
+.footer-contact .footer-award img {
+    width: 25%;
+    height: 25%;
+}
+
+.footer-contact a img {
+    width: 25%;
+    height: 20%;
+}
+
+.footer-contact h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+}
