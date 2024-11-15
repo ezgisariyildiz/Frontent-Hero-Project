@@ -1,5 +1,5 @@
 
-
+// Dropdown menu alanı
 document.addEventListener('DOMContentLoaded', function () {
     const menuItems = document.querySelectorAll('.menu-item');
 
@@ -107,8 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Insurance Companies alanı
-
+// Sigorta kategori kartları alanı
 document.getElementById('show-more').addEventListener('click', function() {
     var moreCompanies = document.querySelectorAll('.row-companies-2');
     var showMoreButton = document.getElementById('show-more');
