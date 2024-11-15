@@ -32,7 +32,6 @@ header {
 }
 
 .navbar {
-    /* Additional styling */
     position: fixed;
     margin: 0 30px;
     text-decoration: none;
@@ -159,7 +158,6 @@ header {
     color: #333;
     margin-bottom: 25px;
     text-align: left;
-    /* Center align header */
 }
 
 .policy-cancellation p {
@@ -167,7 +165,6 @@ header {
     color: #666;
     margin-bottom: 15px;
     text-align: left;
-    /* Center align description */
 }
 
 .policy-cancellation form {
@@ -178,7 +175,6 @@ header {
 .policy-type {
     display: flex;
     justify-content: left;
-    /* Center align radio buttons */
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
